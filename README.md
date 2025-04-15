@@ -1,48 +1,50 @@
-# FocusFlow FocusFlow is a tool designed to enhance productivity and engagement during virtual meetings and online classes. It monitors the attention of participants by detecting whether they are multitasking, distracted, or absent, and sends real-time alerts to the host if attention drops.
+💻 FocusFlow
+FocusFlow is a real-time attention monitoring tool designed for virtual meetings and online classrooms. It detects whether a participant is present, focused, or multitasking — and alerts the host if attention drops.
 
-Features
-Real-time attention detection using webcam feed
+Built during a hackathon at VIT Chennai by Team Error 404.
 
-Automatic alert system when a participant is not paying attention or is absent
+🚀 Features
+✅ Real-time attention tracking via webcam
 
-Simple, user-friendly web interface for both participants and hosts
+✅ Alerts host if participant is absent, distracted, or multitasking
 
-Integration with facial landmark detection for precise attention tracking
+✅ Simple and clean web interface
 
-Tech Stack
-Python: Core logic and attention detection algorithm
+✅ Seamless integration with video calls and virtual sessions
 
-pygetwindow: For window management and determining active applications
+🛠 Tech Stack
+Backend & Logic:
 
-dlib: For facial landmark detection and eye aspect ratio (EAR) calculation
+Python
 
-numpy: For numerical operations and calculations in the algorithm
+dlib (facial landmark detection)
 
-HTML/CSS/JS: Front-end for the user interface
+pygetwindow (detect active application)
 
-Installation
-To get started, clone the repository and install the necessary dependencies:
+numpy (numerical computations)
 
+Frontend:
+
+HTML
+
+CSS
+
+JavaScript
+
+🧪 Installation
 bash
 Copy
 Edit
 git clone https://github.com/your-username/focusflow.git
 cd focusflow
 pip install -r requirements.txt
-How It Works
-The system uses webcam feed to analyze the participant's eye movements and determine if they are paying attention.
+Make sure you have a webcam connected and Python 3.7+ installed.
 
-If the attention drops (e.g., the user is looking away or not present), the system triggers an alert to the host.
+⚙️ How It Works
+The Python script uses dlib to track facial landmarks and detect eye aspect ratio (EAR).
 
-The host is notified in real-time through an alert message, prompting them to take action.
+pygetwindow checks if Zoom, Meet, or any specified app is the active window.
 
-Usage
-Run the Python script to start the attention detection.
+If the user is not attentive or has switched windows, a real-time alert is sent to the host.
 
-Open the web interface to monitor the session.
-
-The system will continuously track the participants' attention during the session.
-
-Contributing
-Feel free to fork the repository, create a branch, and submit pull requests. If you have any questions or suggestions, don’t hesitate to open an issue!
-
+The web interface displays current attention status for quick monitoring.
