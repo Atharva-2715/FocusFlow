@@ -15,8 +15,8 @@ print("🔒 NOTICE: This application monitors your eye activity and whether Zoom
 
 
 # ====== Telegram Bot Setup (HARDCODED) ======
-BOT_TOKEN = "7811072771:AAE4pTdxDk9HzvO_gUChMJUpGNBM2GiN0-I"
-CHAT_ID = "1061787113"  # Replace this with your actual chat ID
+BOT_TOKEN = "ABCS" #Replace this with your Bot Token
+CHAT_ID = "12344"  # Replace this with your actual chat ID
 
 #To prevent spam messages
 last_alert_time = 0
